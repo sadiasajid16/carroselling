@@ -1,0 +1,138 @@
+    :root{
+        --white:#fff;
+        --blue: #0048ff;
+        --gray:rgba(255, 255, 255, 0.788);
+        --sky-blue:#5bc0de;
+        --black: black;
+        }
+    .hero{
+        height: 80vh;            
+        max-height: 900px;      
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding-left: 0.75rem; 
+        padding-right: 0.75rem;
+    }
+    .border-bottom{
+        width: max-content;
+    }
+    .navbar-nav .nav-item:not(:last-child) .nav-link {
+        margin-right: 0.5rem;
+    }
+    .navbar-menu-text {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .highlight-blue {
+        background-color: var(--blue);
+    }
+    .divider-line {
+        border-top: 1px solid var(--white);
+    }
+    .dropdown-item:hover {
+        background-color: var(--white) !important;
+        color: var(--black) !important;
+    }
+    .dropdown-menu.show-on-parent {
+        left: 0 !important;
+        right: 0 !important;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        opacity: 0.3;
+        z-index: 1;
+    }
+    .invia-btn:hover{
+        background-color: var(--white) !important;
+        color: var(--black) !important;
+    }
+    .highlight {
+        color:var(--sky-blue);
+    }
+    .author-text-md-end {
+        text-align: right;
+    }
+    ::placeholder {
+        color: var(--white) !important;
+        opacity: 1;
+    }
+    .divider-line {
+        height: 1px;
+        background-color: var(--white);
+        border-top: 1px solid;
+    }
+    .tecnologia-txt h1{
+        font-size: 4rem;
+    }
+    .carroselling{
+        font-size: 12px;
+    }
+    .footer-right a{
+        font-size: 12px;
+    }
+    .form-control{
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;  
+    }
+    .form-control:focus {
+        border: 1px solid var(--white) !important;
+        background-color: var(--black) !important;
+    }
+
+    @media (min-width: 768px) and (max-width: 990px){
+        .heading{
+            margin-top: 100px;
+        }
+        .hero{
+            margin-bottom: 20px;
+            height: 100vh;
+        }
+        .tecnologia-txt h1{
+            font-size: 2rem;
+        }
+    }
+    @media (max-width: 768px) {
+        .author-text-md-end {
+            text-align: left !important;
+        }
+        .tecnologia{
+            width: 100%;
+        }
+        .tecnologia-txt h1{
+            font-size: 2rem;
+        }
+        .logo{
+            margin-top: 20px;
+        }
+        .hero-text-overlay {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; 
+        }
+        .heading{
+            font-size: 33px;
+        }
+        .hero{
+            height: 100vh;
+        }
+    }
+    @media (max-width: 550px){
+        .invia-btn{
+            width:100%
+        }
+        .img-text h1{
+            font-size: 20px !important;
+        }
+        .tecnologia-txt h1{
+            font-size:1rem;
+        }
+    }
